@@ -4,9 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="form-section">
+       
+        <form>
+            <label for="name">FULL NAME: </label><br>
+            <input type="text" name="name" id="name" placeholder:=" "><br>
+            <label for="email">EMAIL</label><br>
+            <input type="email" name="email" id="email" placeholder="YOUR EMAIL HERE" required><br>
+            <label for="message">MESSAGE REGARDING</label><br>
+            <select type="text" name="message" id="message" placeholder=" "><br>
+                <option value="complaints">Complaints</option>
+                <option value="compliments">Compliments</option>
+                <option value="chitchat">Chit-chat</option></select><br>
+            <label for="message__area">MESSAGE</label><br>
+            <input type="text" name="message__area" id="message__area" placeholder="Your message here" required><br>
+        </form>
+
+        <button type="submit" class="button">SUBMIT</button>
+
+    </div>
+    <div class="complimentary-section">
+
+    </div>
+
+    <!--<img src="images/hiclipart 2.png">-->
+
 </body>
 </html>
