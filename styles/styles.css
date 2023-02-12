@@ -49,10 +49,6 @@ input:focus {
     color:#9DBEBB;
 }
 
-option {
- opacity: 0;
-}
-
 ::placeholder {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
