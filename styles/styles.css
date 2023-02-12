@@ -9,9 +9,7 @@ body {
     font-family: 'Roboto', sans-serif;
 
 }
-div {
 
-}
 .form-section {
     max-width: 954px;
     width: 40%;
@@ -21,7 +19,7 @@ div {
     box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.25);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:center;
     flex-direction: column;
 
 }
@@ -29,8 +27,11 @@ div {
 form {
     display: flex;
     flex-direction: column;
-    align-content: space-between;
+    width: 70%;
     
+}
+label {
+    cursor: pointer;
 }
 
 input , select {
@@ -38,17 +39,55 @@ input , select {
     border: none;
     border-bottom: 2px solid #9DBEBB;
     color:#9DBEBB;
+    outline: none;
+    width: 90%;
+}
+input:focus {
+    background-color: #ca5b5b;
+    border: none;
+    border-bottom: 2px solid #9DBEBB;
+    color:#9DBEBB;
 }
 
-:placeholder-shown
+option {
+ opacity: 0;
+}
+
+::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.3em;
+    color: #FDFFFF;
+}
+.short-line {
+   width: 50%;
+}
 button {
     max-width: 202px;
     max-height: 48px;
-    left: 407px;
-    top: 635px;
     background: #468189;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+    border: none;
     border-radius: 40px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin: 20px;
+    padding:15px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+button:hover {
+    background: #7db4bc;
+}
+button:active {
+    transform: scale(0.8);
 }
 label {
     font-style: normal;
@@ -65,5 +104,16 @@ label {
     min-width: 20% ;
     min-height: 594px;
     box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.25);
+    
+}
+
+img {
+    width:auto;
+    height: auto;
+    z-index: 1;
+    position:absolute;
+    left: 40%;
+    top: 25%;
+    transform: scale(0.8);
     
 }

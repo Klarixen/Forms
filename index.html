@@ -13,29 +13,29 @@
 </head>
 <body>
     <div class="form-section">
-       
-        <form>
+        <form  autocomplete="off">
             <label for="name">FULL NAME: </label><br>
             <input type="text" name="name" id="name" placeholder:=" "><br>
             <label for="email">EMAIL</label><br>
-            <input type="email" name="email" id="email" placeholder="YOUR EMAIL HERE" required><br>
+            <input class="short-line" type="email" name="email" id="email" placeholder="YOUR EMAIL" required autofocus><br>
             <label for="message">MESSAGE REGARDING</label><br>
-            <select type="text" name="message" id="message" placeholder=" "><br>
+            <select class="short-line" type="text" name="message" id="message" placeholder=" "><br>
+                <option value="nonselected">  </option>
                 <option value="complaints">Complaints</option>
                 <option value="compliments">Compliments</option>
                 <option value="chitchat">Chit-chat</option></select><br>
             <label for="message__area">MESSAGE</label><br>
-            <input type="text" name="message__area" id="message__area" placeholder="Your message here" required><br>
+            <input type="text" name="message__area" id="message__area" placeholder="Your message" required maxlength="120"><br>
         </form>
 
-        <button type="submit" class="button">SUBMIT</button>
+        <button type="submit" class="button">SEND MESSAGE</button>
 
     </div>
     <div class="complimentary-section">
 
     </div>
 
-    <!--<img src="images/hiclipart 2.png">-->
+    <img src="images/hiclipart 2.png">
 
 </body>
 </html>
